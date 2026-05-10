@@ -84,9 +84,3 @@ new_runner = {
 }
 # → Predicted finish time: ~3h 15min
 ```
-
-
----
-
-## 🔗 Author
-Built by Veeresh
