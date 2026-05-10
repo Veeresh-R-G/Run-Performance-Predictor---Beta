@@ -42,6 +42,7 @@ This is the core problem companies like **Runna** and **Strava** solve at scale 
 | Linear Regression | 0.1805h | 0.2303h | 0.6979 |
 | Ridge Regression | 0.1717h | 0.2240h | 0.7142 |
 | Random Forest | 0.1309h | 0.1779h | 0.8197 |
+| XG Boost | 0.1410h | 0.2101h | 0.7484 |
 | **Gradient Boosting** ✅ | **0.1199h** | **0.1524h** | **0.8678** |
 
 **Best Model:** Gradient Boosting  
@@ -57,6 +58,11 @@ This is the core problem companies like **Runna** and **Strava** solve at scale 
 - Cross-training had minimal impact on its own, but the binary flag added marginal value
 
 ---
+
+## Model selection Insight
+- XGBoost (MAE : 8.5mins) underperformed vs Grsdient Boosting (MAE : 7.2mins)
+- Likely Reason : XGBoost would perform better on larger datasets with strong regularization. 
+> Lesson learnt : Better architecture != Better results
 
 ## 🛠️ Tech Stack
 - Python, Pandas, NumPy
